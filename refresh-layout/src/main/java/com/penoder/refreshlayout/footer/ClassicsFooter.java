@@ -248,7 +248,7 @@ public class ClassicsFooter extends RelativeLayout implements RefreshFooter {
     @Override
     @Deprecated
     public void setPrimaryColors(int... colors) {
-        if (mSpinnerStyle == SpinnerStyle.Scale) {
+//        if (mSpinnerStyle == SpinnerStyle.Scale) {
             if (colors.length > 0) {
                 if (!(getBackground() instanceof BitmapDrawable)) {
                     setPrimaryColor(colors[0]);
@@ -259,7 +259,7 @@ public class ClassicsFooter extends RelativeLayout implements RefreshFooter {
                     setAccentColor(colors[0] == 0xffffffff ? 0xff666666 : 0xffffffff);
                 }
             }
-        }
+//        }
     }
 
     /**
