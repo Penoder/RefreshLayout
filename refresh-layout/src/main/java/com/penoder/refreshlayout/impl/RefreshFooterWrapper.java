@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.penoder.refreshlayout.SmartRefreshLayout;
+import com.penoder.refreshlayout.PenoderRefreshLayout;
 import com.penoder.refreshlayout.api.RefreshFooter;
 import com.penoder.refreshlayout.api.RefreshKernel;
 import com.penoder.refreshlayout.api.RefreshLayout;
@@ -53,8 +53,8 @@ public class RefreshFooterWrapper implements RefreshFooter {
             return mSpinnerStyle;
         }
         ViewGroup.LayoutParams params = mWrapperView.getLayoutParams();
-        if (params instanceof SmartRefreshLayout.LayoutParams) {
-            mSpinnerStyle = ((SmartRefreshLayout.LayoutParams) params).spinnerStyle;
+        if (params instanceof PenoderRefreshLayout.LayoutParams) {
+            mSpinnerStyle = ((PenoderRefreshLayout.LayoutParams) params).spinnerStyle;
             if (mSpinnerStyle != null) {
                 return mSpinnerStyle;
             }
@@ -70,8 +70,8 @@ public class RefreshFooterWrapper implements RefreshFooter {
     @Override
     public void onInitialized(RefreshKernel kernel, int height, int extendHeight) {
         ViewGroup.LayoutParams params = mWrapperView.getLayoutParams();
-        if (params instanceof SmartRefreshLayout.LayoutParams) {
-            kernel.requestDrawBackgoundForFooter(((SmartRefreshLayout.LayoutParams) params).backgroundColor);
+        if (params instanceof PenoderRefreshLayout.LayoutParams) {
+            kernel.requestDrawBackgoundForFooter(((PenoderRefreshLayout.LayoutParams) params).backgroundColor);
         }
     }
 

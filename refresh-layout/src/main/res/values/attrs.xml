@@ -27,7 +27,7 @@
         <enum name="MatchLayout" value="4"/><!--填满布局-->
     </attr>
 
-    <declare-styleable name="SmartRefreshLayout">
+    <declare-styleable name="PenoderRefreshLayout">
         <attr name="srlPrimaryColor"/>
         <attr name="srlAccentColor"/>
         <attr name="srlReboundDuration" format="integer"/>
