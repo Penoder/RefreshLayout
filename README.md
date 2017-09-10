@@ -11,4 +11,4 @@ allprojects {
 
 Step 2. 在项目模块app 下的 build.gradle文件中添加
 
-compile 'com.github.Penoder:RefreshLayout:1.0'
+compile 'com.github.Penoder:RefreshLayout:1.0.0'
