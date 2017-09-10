@@ -170,7 +170,7 @@ public class PenoderRefreshLayout extends ViewGroup implements RefreshLayout, Ne
      * <p>
      * 解决了，原因是Footer默认设置的主题是 Translate，将主题改为 Scale即可
      */
-    protected float mFooterMaxDragRate = 1.5f;
+    protected float mFooterMaxDragRate = 2.0f;
     /**
      * 下拉头部视图
      */
